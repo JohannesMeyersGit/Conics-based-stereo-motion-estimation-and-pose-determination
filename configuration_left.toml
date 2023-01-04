@@ -1,0 +1,29 @@
+# Control camera parameters
+[Camera]
+camera_position = [0,-50,10] # camera position in mm
+camera_direction = [0,-12,0] # camera direction in mm
+camera_focal_length = 475 # focal length in pixel
+camera_pix_to_mm = 0.055 # constant to calculate pixel to mm length
+camera_image_size = [480, 360] # Size of the image obtained by the camera
+camera_focus_distance = 38 # focus ditance of the camera in mm
+camera_focus_stop = 0.2 # focus stop of camera 
+camera_up = [0,0,1] # Upwards direction of the camera
+
+# Control eye parameters
+[Eye]
+eye_position = [0,0,0] # default position of the center of the eye ball in mm
+eye_direction = [0,-12,0] # default gaze direction in mm 
+eye_cornea_refractive_index = 1.336 # default cornea refractive index n derived from literatur
+eye_radius = 12.0 # default radius of the eye in mm
+eye_openness = 0.0 # default eye lid closure 0.0 refers to fully open eye
+eye_up = [0,0,1]
+eye_iris_texture = "light"
+
+# Control rendering parameters
+[Rendering]
+rendering_light_position = [10, -10, 100] # position of the light source illuminating the scene in mm
+rendering_light_strength = 10 # intensitiy of the light source in a.u.
+rendering_light_direction = [0,0,0] # direction of the light source in mm
+rendering_render_ims = 0 # 0 = do not render images 1 = render images 
+rendering_dir_to_ims = "None"
+rendering_render_samples = 20
